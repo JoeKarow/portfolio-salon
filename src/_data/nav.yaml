@@ -1,0 +1,15 @@
+---
+nav:
+  - text: Home
+    url: "#home"
+  - text: About
+    url: "#about"
+  - text: Services
+    url: "#services"
+  - text: Lookbook
+    url: "#lookbook"
+  - text: Contact
+    url: "#contact"
+  - text: Book Now
+    url: "#book"
+    class: btn

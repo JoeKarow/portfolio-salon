@@ -1,0 +1,19 @@
+<header class="bg-slate-700">
+    <nav class="flex justify-between p-3 items-center">
+        <a href="#">
+            <h1 class="navLogo text-3xl text-blue-400">Doghair.</h1>
+        </a>
+        {% if nav.nav %}
+        <i id= "btnBurger" class="cursor-pointer text-3xl text-white lg:hidden fa-solid fa-bars pr-3"></i>
+                <ul id="menuNav" class="menuMobile py-2 lg:py-0 lg:flex justify-evenly flex-initial lg:w-9/12 text-white items-center">
+                    {% for item in nav.nav %}
+                        <a href="{{ item.url }}">
+                            <li class="navItem {{ item.class }}">{{ item.text }}</li>
+                        </a>
+                    {% endfor %}
+                </ul>
+
+        {% endif %}
+        <!-- <a href="#"><span class="">Book Online</span></a> -->
+    </nav>
+</header>
